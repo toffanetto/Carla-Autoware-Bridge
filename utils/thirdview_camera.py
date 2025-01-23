@@ -46,6 +46,7 @@ def main():
   vehicle = vehicle[0]
 
 
+  vehicle_transform = vehicle.get_transform()
 
     
   metres_distance = 5
