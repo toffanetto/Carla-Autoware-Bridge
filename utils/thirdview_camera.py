@@ -63,3 +63,12 @@ def main():
     spectator_pos = carla.Transform(vehicle_transform.location + carla.Location(x=-x,y=-y,z=5 ),
                                             carla.Rotation( yaw = vehicle_transform.rotation.yaw,pitch = -25))
     spectator.set_transform(spectator_pos)  
+
+if __name__ == '__main__':
+
+    try:
+        main()
+    except KeyboardInterrupt:
+        pass
+    finally:
+        print('\ndone.')
