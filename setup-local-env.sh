@@ -13,7 +13,7 @@ sudo apt-get update \
   && pip install carla-0.9.15-cp310-cp310-linux_x86_64.whl \
   && pip install simple-pid==1.0.1 \
   && pip install vcstool \
-  && vcs import --recursive src < src/carla_autoware_bridge/docker/docker.repos \
+  && vcs import --recursive src < src/Carla-Autoware-Bridge/docker/docker.repos \
   && rosdep init && rosdep update && rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 
 source /opt/ros/$ROS_DISTRO/setup.bash && \
